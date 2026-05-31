@@ -1,0 +1,14 @@
+name: Run Bypass Panel
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Run Bypass
+        shell: powershell
+        run: |
+          ./"HDN UID BYPASS V1.1.exe"

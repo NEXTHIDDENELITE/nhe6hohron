@@ -1,0 +1,1001 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>NINJA HEX</title>
+        <link rel="icon" type="image/png" href="../public/assets/images/logo.png">
+        <meta name="description" content="NINJA HEX - Premium gaming panels and secure external tools. Reliable, automated delivery with 24/7 support for gamers worldwide.">
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link rel="preload" href="styles/main.css?v=1780596641" as="style">
+        <link rel="stylesheet" href="styles/main.css?v=1780596641">
+        <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css?v=1780596641" as="style">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css?v=1780596641">
+        <style id="hide-loader">
+            #preloader {
+                display: none!important;
+                opacity: 0!important;
+                visibility: hidden!important
+            }
+        </style>
+        <script>
+            if (!sessionStorage.getItem('loaderShown')) {
+                document.getElementById('hide-loader').remove();
+            }
+        </script>
+    </head>
+    <body>
+        <div id="preloader">
+            <div class="loader-content">
+                <div class="loader-title">NINJA HEX</div>
+                <div class="loader-bar-container">
+                    <div class="loader-bar"></div>
+                </div>
+            </div>
+        </div>
+        <div id="splash" aria-hidden="false">
+            <div class="splash-inner">
+                <h1 class="splash-title">NINJA HEX</h1>
+            </div>
+        </div>
+        <header class="site-header-pro">
+            <div class="header-inner">
+                <div class="brand" onclick="scrollToTop()" style="cursor:pointer">
+                    <img src="public/assets/images/logo.png" alt="logo" class="brand-logo" width="35" height="40">
+                    <span class="brand-text">
+                        NINJA<span class="brand-accent">HEX</span>
+                    </span>
+                </div>
+                <nav class="pro-nav">
+                    <a href="/" class="active">Home</a>
+                    <a href="#pricing">Pricing</a>
+                    <a href="#discord">Status</a>
+                    <a href="#reseller" class="nav-reseller">Reseller</a>
+                </nav>
+                <div class="header-actions">
+                    <a href="https://discord.gg/ninjahex" target="_blank" class="nav-discord-btn">
+                        <i class="fab fa-discord" style="margin-right:6px;font-size:16px"></i>
+                        Discord
+                    </a>
+                </div>
+                <button class="mobile-toggle" onclick="toggleMobileNav()">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </header>
+        <main>
+            <section class="hero">
+                <div class="hero-container">
+                    <div class="hero-left scroll-animate">
+                        <h1 id="t_title">Welcome to Ninja Hex</h1>
+                        <p id="t_desc">We are a professional team providing premium panels with secure Discord-based delivery.</p>
+                    </div>
+                </div>
+                <h2 class="featured-heading scroll-animate stagger-1">
+                    <span id="t_featHeading">Panel Functions</span>
+                </h2>
+                <div class="showcase scroll-animate stagger-2" aria-label="Featured panels">
+                    <div class="showcase-track" id="showcaseTrack"></div>
+                </div>
+                <button class="btn scroll-animate stagger-3" id="t_btn" style="display:block;margin:18px auto" onclick="window.open('https://discord.gg/ninjahex', '_blank')">Join Discord to Buy</button>
+            </section>
+            <section id="pricing" class="scroll-animate" style="padding:100px 20px">
+                <div style="text-align:center;margin-bottom:50px" class="scroll-animate stagger-1">
+                    <h2 style="font-size:2.5rem;font-weight:800;color:#fff;margin-bottom:15px">Cheat Price</h2>
+                    <p style="color:#94a3b8;font-size:1.1rem;max-width:600px;margin:0 auto">Gain the competitive edge with our premium Free Fire cheat packages</p>
+                </div>
+                <div class="ff-pricing-grid scroll-animate stagger-2">
+                    <div class="ff-pricing-card">
+                        <div class="ff-tier-name">Weekly</div>
+                        <div class="ff-price">$5.00</div>
+                        <div class="ff-payment-type">one-time payment</div>
+                        <ul class="ff-features">
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                Aimbot
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                ESP Wallhack
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                Rage Mode
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                Stream Mode
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                24/7 Support
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                7-day access
+                            </li>
+                        </ul>
+                        <button class="ff-buy-btn" onclick="window.open('https://discord.gg/ninjahex', '_blank')">
+                            <i class="fas fa-shopping-cart" style="font-size:14px"></i>
+                            Buy Now - $5.00
+                        </button>
+                    </div>
+                    <div class="ff-pricing-card">
+                        <div class="ff-tier-name">Monthly</div>
+                        <div class="ff-price">$15.00</div>
+                        <div class="ff-payment-type">one-time payment</div>
+                        <ul class="ff-features">
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                Aimbot
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                ESP Wallhack
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                Rage Mode
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                Stream Mode
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                24/7 Support
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                30-day continuous access
+                            </li>
+                        </ul>
+                        <button class="ff-buy-btn" onclick="window.open('https://discord.gg/ninjahex', '_blank')">
+                            <i class="fas fa-shopping-cart" style="font-size:14px"></i>
+                            Buy Now - $15.00
+                        </button>
+                    </div>
+                    <div class="ff-pricing-card ff-popular">
+                        <div class="ff-popular-badge">
+                            <i class="fas fa-star" style="color:#facc15;font-size:11px"></i>
+                            Best Value
+                        </div>
+                        <div class="ff-tier-name">3 Months</div>
+                        <div class="ff-price">$35.00</div>
+                        <div class="ff-payment-type">one-time payment</div>
+                        <ul class="ff-features">
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                Aimbot
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                ESP Wallhack
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                Rage Mode
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                Stream Mode
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                24/7 Support
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                90-day continuous access
+                            </li>
+                        </ul>
+                        <button class="ff-buy-btn" onclick="window.open('https://discord.gg/ninjahex', '_blank')">
+                            <i class="fas fa-shopping-cart" style="font-size:14px"></i>
+                            Buy Now - $35.00
+                        </button>
+                    </div>
+                    <div class="ff-pricing-card">
+                        <div class="ff-tier-name">Yearly</div>
+                        <div class="ff-price">$50.00</div>
+                        <div class="ff-payment-type">one-time payment</div>
+                        <ul class="ff-features">
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                Aimbot
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                ESP Wallhack
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                Rage Mode
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                Stream Mode
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                24/7 Support
+                            </li>
+                            <li>
+                                <i class="fas fa-check" style="color:#10b981"></i>
+                                365-day access
+                            </li>
+                        </ul>
+                        <button class="ff-buy-btn" onclick="window.open('https://discord.gg/ninjahex', '_blank')">
+                            <i class="fas fa-shopping-cart" style="font-size:14px"></i>
+                            Buy Now - $50.00
+                        </button>
+                    </div>
+                </div>
+            </section>
+            <section id="discord" class="discord-section scroll-animate">
+                <h2 class="discord-title">
+                    Join Our <span>Discord</span>
+                    Community
+                </h2>
+                <p class="discord-sub">Connect with other users, get support, and stay updated</p>
+                <div class="discord-widget-box scroll-animate stagger-1">
+                    <iframe src="https://discord.com/widget?id=1251635686986219572&theme=dark" width="100%" height="500" allowtransparency="true" frameborder="0" loading="lazy" title="Discord Widget" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+                </div>
+            </section>
+            <section id="reseller">
+                <div class="card scroll-animate">
+                    <h2 id="t_offer_title">Reseller — Earn With Us</h2>
+                    <p class="lead" data-i18n="homeResellerLead" style="margin-top:6px;margin-bottom:14px;font-weight:600;color:var(--text-primary)">Best value • Fast delivery • Trusted service</p>
+                    <div class="reseller-pricing scroll-animate stagger-1" style="display:flex;flex-wrap:wrap;gap:12px">
+                        <div style="flex:1 1 220px;background:linear-gradient(135deg,#081129,#0b1220);border-radius:12px;padding:14px;color:#fff;box-shadow:0 6px 18px rgba(2,6,23,.6)">
+                            <div style="display:flex;align-items:center;gap:12px">
+                                <i class="fas fa-gem" style="font-size:22px;color:#f59e0b"></i>
+                                <div>
+                                    <div style="font-size:13px;opacity:.85" data-i18n="card1Week">1 WEEK</div>
+                                    <div style="font-size:20px;font-weight:800">$3.50</div>
+                                </div>
+                            </div>
+                            <div style="margin-top:10px;color:var(--text-secondary);font-size:13px" data-i18n="homeResellerWeekDesc">Great for short-term testing — best value for quick sellers.</div>
+                        </div>
+                        <div style="flex:1 1 220px;background:linear-gradient(135deg,#071229,#0b1424);border-radius:12px;padding:14px;color:#fff;box-shadow:0 6px 18px rgba(2,6,23,.6)">
+                            <div style="display:flex;align-items:center;gap:12px">
+                                <i class="fas fa-bolt" style="font-size:22px;color:#06b6d4"></i>
+                                <div>
+                                    <div style="font-size:13px;opacity:.85" data-i18n="card1Month">1 MONTH</div>
+                                    <div style="font-size:20px;font-weight:800">$13.50</div>
+                                </div>
+                            </div>
+                            <div style="margin-top:10px;color:var(--text-secondary);font-size:13px" data-i18n="homeResellerMonthDesc">Most popular — recurring buyers prefer this period.</div>
+                        </div>
+                        <div style="flex:1 1 220px;background:linear-gradient(135deg,#081022,#0b1320);border-radius:12px;padding:14px;color:#fff;box-shadow:0 6px 18px rgba(2,6,23,.6)">
+                            <div style="display:flex;align-items:center;gap:12px">
+                                <i class="fas fa-tags" style="font-size:22px;color:#7c3aed"></i>
+                                <div>
+                                    <div style="font-size:13px;opacity:.85" data-i18n="card3Months">3 MONTHS</div>
+                                    <div style="font-size:20px;font-weight:800">$30.50</div>
+                                </div>
+                            </div>
+                            <div style="margin-top:10px;color:var(--text-secondary);font-size:13px" data-i18n="homeResellerThreeDesc">Best value — volume sellers use this for steady income.</div>
+                        </div>
+                        <div style="flex:1 1 220px;background:linear-gradient(135deg,#06101a,#0a1220);border-radius:12px;padding:14px;color:#fff;box-shadow:0 6px 18px rgba(2,6,23,.6)">
+                            <div style="display:flex;align-items:center;gap:12px">
+                                <i class="fas fa-crown" style="font-size:22px;color:#ef4444"></i>
+                                <div>
+                                    <div style="font-size:13px;opacity:.85" data-i18n="card1Year">1 YEAR</div>
+                                    <div style="font-size:20px;font-weight:800">$45.50</div>
+                                </div>
+                            </div>
+                            <div style="margin-top:10px;color:var(--text-secondary);font-size:13px" data-i18n="homeResellerYearDesc">Top-tier — the best margin for long-term partners.</div>
+                        </div>
+                    </div>
+                    <div style="margin-top:14px;padding:12px;border-radius:10px;background:linear-gradient(180deg,rgba(255,255,255,.02),transparent);display:flex;justify-content:center;align-items:center;gap:10px">
+                        <i class="fas fa-dollar-sign" style="font-size:20px;color:#10b981"></i>
+                        <div style="font-size:15px;font-weight:700" data-i18n="homeResellerFooter">💲 Reseller Pricing — Earn with competitive margins selling our panels.</div>
+                    </div>
+                    <style>
+                        .rc-container {
+                            width: 100%;
+                            margin-top: 30px;
+                            font-family: inherit
+                        }
+
+                        .rc-button {
+                            background: linear-gradient(90deg,#a78bfa,#38bdf8);
+                            border: none;
+                            padding: 12px 24px;
+                            border-radius: 30px;
+                            color: #fff;
+                            font-weight: 800;
+                            font-size: 1.1rem;
+                            cursor: pointer;
+                            display: inline-block;
+                            transition: all .3s ease;
+                            box-shadow: 0 4px 15px rgba(56,189,248,.3)
+                        }
+
+                        .rc-button:hover {
+                            transform: scale(1.03);
+                            box-shadow: 0 6px 20px rgba(56,189,248,.4)
+                        }
+
+                        .rc-panel {
+                            background: #0b1120;
+                            border: 1px solid #1e293b;
+                            border-radius: 12px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 4px;
+                            opacity: 0;
+                            max-height: 0;
+                            overflow: hidden;
+                            transition: all .5s cubic-bezier(.4, 0, .2, 1)
+                        }
+
+                        .rc-panel.rc-open {
+                            opacity: 1;
+                            max-height: 700px;
+                            margin-top: 20px;
+                            padding: 20px
+                        }
+
+                        .rc-row {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: center;
+                            padding: 12px 10px;
+                            border-radius: 8px;
+                            transition: background .2s
+                        }
+
+                        .rc-row:hover {
+                            background: rgba(255,255,255,.02)
+                        }
+
+                        .rc-info {
+                            display: flex;
+                            align-items: center;
+                            gap: 16px
+                        }
+
+                        .rc-icon {
+                            width: 42px;
+                            height: 42px;
+                            border-radius: 10px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            background: rgba(20,30,50,.5);
+                            border: 1px solid rgba(255,255,255,.03)
+                        }
+
+                        .rc-icon.w1 i {
+                            color: #f59e0b
+                        }
+
+                        .rc-icon.m1 i {
+                            color: #06b6d4
+                        }
+
+                        .rc-icon.m3 i {
+                            color: #8b5cf6
+                        }
+
+                        .rc-icon.y1 i {
+                            color: #ef4444
+                        }
+
+                        .rc-brand {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 2px
+                        }
+
+                        .rc-name {
+                            color: #f8fafc;
+                            font-weight: 800;
+                            font-size: 1rem;
+                            letter-spacing: .5px
+                        }
+
+                        .rc-price-tag {
+                            color: #94a3b8;
+                            font-size: .8rem;
+                            font-weight: 500
+                        }
+
+                        .rc-counter {
+                            background: #111827;
+                            border: 1px solid #1f2937;
+                            border-radius: 8px;
+                            display: flex;
+                            align-items: center;
+                            overflow: hidden
+                        }
+
+                        .rc-btn {
+                            background: 0 0;
+                            border: none;
+                            color: #64748b;
+                            padding: 10px 14px;
+                            cursor: pointer;
+                            font-size: 1rem;
+                            transition: all .2s
+                        }
+
+                        .rc-btn:hover {
+                            color: #f8fafc;
+                            background: rgba(255,255,255,.05)
+                        }
+
+                        .rc-val {
+                            color: #f8fafc;
+                            font-weight: 600;
+                            width: 20px;
+                            text-align: center;
+                            user-select: none
+                        }
+
+                        .rc-settings {
+                            display: flex;
+                            flex-wrap: wrap;
+                            gap: 16px;
+                            margin-top: 10px;
+                            padding: 14px 10px;
+                            border-radius: 10px;
+                            background: rgba(255,255,255,.02);
+                            border: 1px solid rgba(255,255,255,.05)
+                        }
+
+                        .rc-settings-item {
+                            flex: 1 1 240px;
+                            min-width: 220px;
+                            display: flex;
+                            flex-direction: column;
+                            gap: 8px
+                        }
+
+                        .rc-settings-label {
+                            color: #94a3b8;
+                            font-size: .85rem;
+                            font-weight: 700
+                        }
+
+                        .rc-settings-range,.rc-settings-select {
+                            width: 100%;
+                            border-radius: 10px;
+                            border: 1px solid rgba(148,163,184,.15);
+                            background: #0c1728;
+                            color: #f8fafc;
+                            font-size: .95rem;
+                            padding: 10px 12px
+                        }
+
+                        .rc-settings-range {
+                            appearance: none;
+                            -webkit-appearance: none;
+                            background: linear-gradient(to right,#38bdf8 var(--slider-val,20%),#1f2937 var(--slider-val,20%));
+                            cursor: pointer;
+                            margin-top: 6px;
+                            height: 8px;
+                            border-radius: 999px;
+                            transition: background .2s ease;
+                            --slider-val: 20%;
+                            padding: 0;
+                            border: none
+                        }
+
+                        .rc-settings-range::-webkit-slider-runnable-track {
+                            width: 100%;
+                            height: 8px;
+                            border-radius: 999px;
+                            background: 0 0
+                        }
+
+                        .rc-settings-range::-webkit-slider-thumb {
+                            -webkit-appearance: none;
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 50%;
+                            background: #38bdf8;
+                            box-shadow: 0 4px 12px rgba(56,189,248,.25);
+                            border: none;
+                            margin-top: -4px;
+                            transition: transform .2s ease,box-shadow .2s ease
+                        }
+
+                        .rc-settings-range:focus {
+                            outline: 0
+                        }
+
+                        .rc-settings-range::-moz-range-track {
+                            width: 100%;
+                            height: 8px;
+                            border-radius: 999px;
+                            background: linear-gradient(to right,#38bdf8 var(--slider-val,20%),#1f2937 var(--slider-val,20%))
+                        }
+
+                        .rc-settings-range::-moz-range-thumb {
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 50%;
+                            background: #38bdf8;
+                            box-shadow: 0 4px 12px rgba(56,189,248,.25);
+                            border: none;
+                            transition: transform .2s ease,box-shadow .2s ease
+                        }
+
+                        .rc-settings-range::-ms-track {
+                            width: 100%;
+                            height: 8px;
+                            background: 0 0;
+                            border-color: transparent;
+                            color: transparent
+                        }
+
+                        .rc-settings-range::-ms-fill-lower {
+                            background: #38bdf8;
+                            border-radius: 999px
+                        }
+
+                        .rc-settings-range::-ms-fill-upper {
+                            background: #1f2937;
+                            border-radius: 999px
+                        }
+
+                        .rc-settings-range::-ms-thumb {
+                            width: 16px;
+                            height: 16px;
+                            border-radius: 50%;
+                            background: #38bdf8;
+                            box-shadow: 0 4px 12px rgba(56,189,248,.25);
+                            border: none
+                        }
+
+                        .rc-settings-range::-moz-range-thumb:hover,.rc-settings-range::-ms-thumb:hover,.rc-settings-range::-webkit-slider-thumb:hover {
+                            transform: scale(1.05);
+                            box-shadow: 0 6px 18px rgba(56,189,248,.3)
+                        }
+
+                        .rc-settings-range-wrap {
+                            display: flex;
+                            align-items: center;
+                            justify-content: space-between;
+                            gap: 10px
+                        }
+
+                        .rc-total span {
+                            display: inline-block;
+                            margin-right: 10px
+                        }
+
+                        .rc-total .rc-total-label {
+                            color: #94a3b8
+                        }
+
+                        .rc-total .rc-keys {
+                            color: #38bdf8
+                        }
+
+                        .rc-total .rc-totalprice {
+                            color: #c084fc
+                        }
+
+                        .rc-total .rc-profit {
+                            color: #22c55e;
+                            text-shadow: 0 0 10px rgba(34,197,94,.5)
+                        }
+
+                        .rc-footer {
+                            display: flex;
+                            justify-content: space-between;
+                            align-items: flex-end;
+                            margin-top: 10px;
+                            padding-top: 15px;
+                            border-top: 1px solid rgba(255,255,255,.05)
+                        }
+
+                        .rc-footer-left {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 6px;
+                            align-items: flex-start;
+                            text-align: left
+                        }
+
+                        .rc-alert {
+                            color: #f59e0b;
+                            font-weight: 700;
+                            font-size: .95rem
+                        }
+
+                        .rc-hint {
+                            color: #64748b;
+                            font-size: .8rem
+                        }
+
+                        .rc-total {
+                            color: #f8fafc;
+                            font-weight: 800;
+                            font-size: 1.05rem;
+                            white-space: pre-wrap;
+                            text-align: right
+                        }
+                    </style>
+                    <div class="rc-container scroll-animate stagger-2">
+                        <button class="rc-button" onclick="toggleResellerCalc()">Calculate Reseller Price</button>
+                        <div id="rc-panel" class="rc-panel">
+                            <div class="rc-row">
+                                <div class="rc-info">
+                                    <div class="rc-icon w1">
+                                        <i class="fas fa-calendar-alt"></i>
+                                    </div>
+                                    <div class="rc-brand">
+                                        <span class="rc-name">1 WEEK</span>
+                                        <span class="rc-price-tag">$3.50 each</span>
+                                    </div>
+                                </div>
+                                <div class="rc-counter">
+                                    <button class="rc-btn" onclick="updateRcCount('w1', -1)">
+                                        <i class="fas fa-minus" style="font-size:10px"></i>
+                                    </button>
+                                    <span class="rc-val" id="rc-v-w1">0</span>
+                                    <button class="rc-btn" onclick="updateRcCount('w1', 1)">
+                                        <i class="fas fa-plus" style="font-size:10px"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="rc-row">
+                                <div class="rc-info">
+                                    <div class="rc-icon m1">
+                                        <i class="fas fa-calendar-check"></i>
+                                    </div>
+                                    <div class="rc-brand">
+                                        <span class="rc-name">1 MONTH</span>
+                                        <span class="rc-price-tag">$13.50 each</span>
+                                    </div>
+                                </div>
+                                <div class="rc-counter">
+                                    <button class="rc-btn" onclick="updateRcCount('m1', -1)">
+                                        <i class="fas fa-minus" style="font-size:10px"></i>
+                                    </button>
+                                    <span class="rc-val" id="rc-v-m1">0</span>
+                                    <button class="rc-btn" onclick="updateRcCount('m1', 1)">
+                                        <i class="fas fa-plus" style="font-size:10px"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="rc-row">
+                                <div class="rc-info">
+                                    <div class="rc-icon m3">
+                                        <i class="fas fa-tags"></i>
+                                    </div>
+                                    <div class="rc-brand">
+                                        <span class="rc-name">3 MONTHS</span>
+                                        <span class="rc-price-tag">$30.50 each</span>
+                                    </div>
+                                </div>
+                                <div class="rc-counter">
+                                    <button class="rc-btn" onclick="updateRcCount('m3', -1)">
+                                        <i class="fas fa-minus" style="font-size:10px"></i>
+                                    </button>
+                                    <span class="rc-val" id="rc-v-m3">0</span>
+                                    <button class="rc-btn" onclick="updateRcCount('m3', 1)">
+                                        <i class="fas fa-plus" style="font-size:10px"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="rc-row">
+                                <div class="rc-info">
+                                    <div class="rc-icon y1">
+                                        <i class="fas fa-crown"></i>
+                                    </div>
+                                    <div class="rc-brand">
+                                        <span class="rc-name">1 YEAR</span>
+                                        <span class="rc-price-tag">$45.50 each</span>
+                                    </div>
+                                </div>
+                                <div class="rc-counter">
+                                    <button class="rc-btn" onclick="updateRcCount('y1', -1)">
+                                        <i class="fas fa-minus" style="font-size:10px"></i>
+                                    </button>
+                                    <span class="rc-val" id="rc-v-y1">0</span>
+                                    <button class="rc-btn" onclick="updateRcCount('y1', 1)">
+                                        <i class="fas fa-plus" style="font-size:10px"></i>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="rc-settings">
+                                <div class="rc-settings-item">
+                                    <label class="rc-settings-label" for="rc-mode-selector">Profit Mode</label>
+                                    <select id="rc-mode-selector" class="rc-settings-select" onchange="onRcModeChange()">
+                                        <option value="normal">Normal Profit</option>
+                                        <option value="custom">Custom Profit (%)</option>
+                                    </select>
+                                </div>
+                                <div class="rc-settings-item" id="rc-margin-row" style="display:none">
+                                    <div class="rc-settings-range-wrap">
+                                        <label class="rc-settings-label" for="rc-margin-slider">Margin %</label>
+                                        <span id="rc-margin-value" style="color:#f8fafc;font-weight:700">20%</span>
+                                    </div>
+                                    <input id="rc-margin-slider" class="rc-settings-range" type="range" min="0" max="100" value="20" oninput="onRcMarginChange()">
+                                </div>
+                            </div>
+                            <div class="rc-footer">
+                                <div class="rc-footer-left">
+                                    <span class="rc-alert" id="rc-alert-msg">Minimum 5 keys required for reseller purchases</span>
+                                    <span class="rc-hint">Adjust counts, mode, or margin to update results instantly</span>
+                                </div>
+                                <div class="rc-total" id="rc-total-display">
+                                    <span class="rc-keys">Keys: 0</span>
+                                    <span class="rc-totalprice">Total Price: $0.00</span>
+                                    <span class="rc-profit">Profit: $0.00</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <script>
+                        let rcCounts = {
+                            w1: 0,
+                            m1: 0,
+                            m3: 0,
+                            y1: 0
+                        };
+                        const rcBaseCosts = {
+                            w1: 3.5,
+                            m1: 13.5,
+                            m3: 30.5,
+                            y1: 45.5
+                        };
+                        const rcFixedPrices = {
+                            w1: 5.0,
+                            m1: 15.0,
+                            m3: 35.0,
+                            y1: 50.0
+                        };
+                        let rcMode = 'normal';
+                        let rcMargin = 20;
+
+                        function toggleResellerCalc() {
+                            const panel = document.getElementById('rc-panel');
+                            panel.classList.toggle('rc-open');
+                        }
+
+                        function updateRcCount(plan, change) {
+                            let newVal = rcCounts[plan] + change;
+                            if (newVal < 0)
+                                newVal = 0;
+                            rcCounts[plan] = newVal;
+                            document.getElementById('rc-v-' + plan).innerText = newVal;
+                            recalcRc();
+                        }
+
+                        function onRcModeChange() {
+                            const modeSelect = document.getElementById('rc-mode-selector');
+                            rcMode = modeSelect.value;
+                            document.getElementById('rc-margin-row').style.display = rcMode === 'custom' ? 'block' : 'none';
+                            recalcRc();
+                        }
+
+                        function onRcMarginChange() {
+                            const slider = document.getElementById('rc-margin-slider');
+                            rcMargin = Number(slider.value);
+                            slider.style.setProperty('--slider-val', `${rcMargin}%`);
+                            document.getElementById('rc-margin-value').innerText = `${rcMargin}%`;
+                            recalcRc();
+                        }
+
+                        function recalcRc() {
+                            let totalKeys = 0;
+                            let totalCost = 0;
+                            for (let plan in rcCounts) {
+                                totalKeys += rcCounts[plan];
+                                totalCost += rcCounts[plan] * rcBaseCosts[plan];
+                            }
+
+                            let totalRevenue = 0;
+                            if (rcMode === 'normal') {
+                                for (let plan in rcCounts) {
+                                    totalRevenue += rcCounts[plan] * rcFixedPrices[plan];
+                                }
+                            } else {
+                                totalRevenue = totalCost * (1 + rcMargin / 100);
+                            }
+
+                            const totalProfit = totalRevenue - totalCost;
+                            const display = document.getElementById('rc-total-display');
+                            display.innerHTML = `<span class="rc-keys">Keys: ${totalKeys}</span><span class="rc-totalprice">Total Price: $${totalCost.toFixed(2)}</span><span class="rc-profit">Profit: $${totalProfit.toFixed(2)}</span>`;
+
+                            display.style.color = totalKeys > 0 ? '#41db04' : '#ffffff';
+                        }
+
+                        document.addEventListener('DOMContentLoaded', function() {
+                            const marginSlider = document.getElementById('rc-margin-slider');
+                            document.getElementById('rc-mode-selector').value = rcMode;
+                            marginSlider.value = rcMargin;
+                            marginSlider.style.setProperty('--slider-val', `${rcMargin}%`);
+                            marginSlider.addEventListener('input', function() {
+                                this.style.setProperty('--slider-val', `${this.value}%`);
+                            });
+                            document.getElementById('rc-margin-value').innerText = `${rcMargin}%`;
+                            document.getElementById('rc-margin-row').style.display = 'none';
+                            recalcRc();
+                        });
+                    </script>
+                </div>
+            </section>
+        </main>
+        <button id="scrollTopBtn" class="scroll-top-btn" aria-label="Scroll to top" title="Back to top">
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        <script type="module" src="scripts/main.js?v=1780596641"></script>
+        <section class="about-section-new">
+            <div class="about-container-new">
+                <div class="about-content-new">
+                    <h2 class="about-title-new">
+                        <span id="t_about_new_main_word">About</span>
+                        <span class="highlight-text">NINJA HEX</span>
+                    </h2>
+                    <p class="about-desc-new" id="t_about_new_desc">We are a premier provider of high-performance gaming panels, dedicated to enhancing your gameplay with cutting-edge technology. Established with a passion for excellence, NINJA HEX delivers reliable, secure, and instant solutions for gamers worldwide.</p>
+                    <div class="about-features-grid">
+                        <div class="about-feature-item">
+                            <i class="fas fa-bolt"></i>
+                            <div>
+                                <h4 id="t_af1_title">Instant Delivery</h4>
+                                <p id="t_af1_desc">Get automated access immediately after purchase.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <i class="fas fa-shield-alt"></i>
+                            <div>
+                                <h4 id="t_af2_title">Secure & Safe</h4>
+                                <p id="t_af2_desc">100% undetected processing with advanced encryption.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <i class="fas fa-headset"></i>
+                            <div>
+                                <h4 id="t_af3_title">24/7 Support</h4>
+                                <p id="t_af3_desc">Our expert team is always online to assist you.</p>
+                            </div>
+                        </div>
+                        <div class="about-feature-item">
+                            <i class="fas fa-users"></i>
+                            <div>
+                                <h4 id="t_af4_title">Community Driven</h4>
+                                <p id="t_af4_desc">Join thousands of satisfied users in our Discord.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual-new">
+                    <div class="about-stat-card">
+                        <div class="stat-number">2958+</div>
+                        <div class="stat-label" id="t_stat_users_label">Active Users</div>
+                    </div>
+                    <div class="about-stat-card">
+                        <div class="stat-number">99.9%</div>
+                        <div class="stat-label" id="t_stat_uptime_label">Uptime</div>
+                    </div>
+                    <div class="owners-preview">
+                        <div class="owner-bg-labels">LEADERSHIP</div>
+                        <div class="owner-cards-container">
+                            <a href="https://discord.com/users/1011387630585385001" target="_blank" class="owner-mini-card">
+                                <img src="https://cdn.discordapp.com/avatars/1011387630585385001/978b58f402223c94c2fe21ae1b0e8e64.png?size=1024" alt="Ninja Hex" loading="lazy">
+                                <div class="owner-mini-info">
+                                    <span class="name">•‿• Ｎ ! ＮＪＡ ＨＥＸ</span>
+                                    <span class="role" id="t_role_1">Founder / DEV</span>
+                                </div>
+                            </a>
+                            <a href="https://discord.com/users/583443527502135296" target="_blank" class="owner-mini-card">
+                                <img src="https://cdn.discordapp.com/guilds/1251635686986219572/users/583443527502135296/avatars/ffc5cee3076c2ccb7f957b013638efe4.webp?size=1024" alt="Dev" loading="lazy">
+                                <div class="owner-mini-info">
+                                    <span class="name">! NINJA HEX</span>
+                                    <span class="role" id="t_role_2">Founder</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="site-footer scroll-animate">
+            <div class="footer-grid">
+                <div class="footer-col scroll-animate stagger-1" style="max-width:350px">
+                    <h3>NINJA HEX</h3>
+                    <p style="color:#94a3b8;font-size:14px;margin-bottom:20px;line-height:1.6" data-i18n="footerBrandDesc">The leading provider of premium gaming tools. Secure, undetected, and instant delivery for the best gaming experience.</p>
+                    <div class="footer-social">
+                        <a href="https://www.instagram.com/ninja_hex/" target="_blank" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://discord.gg/gSqaZTcnGy" target="_blank" aria-label="Discord">
+                            <i class="fa-brands fa-discord"></i>
+                        </a>
+                        <a href="https://youtube.com/@ninjahexff" target="_blank" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@ninja.hex" target="_blank" aria-label="TikTok">
+                            <i class="fa-brands fa-tiktok"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="footer-col scroll-animate stagger-2">
+                    <h4 id="t_fTrustTitle">Trust & Security</h4>
+                    <ul class="footer-links">
+                        <li>
+                            <a href="/privacy" id="t_fPrivacy">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="/terms" id="t_fTerms">Terms of Service</a>
+                        </li>
+                        <li>
+                            <a href="/feedback" id="t_fFeedback">Submit a Feedback</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-col scroll-animate stagger-3">
+                    <h4 id="t_fPayTitle">Secure Payment</h4>
+                    <p class="pay-desc" id="t_fPayDesc">Encrypted 256-bit SSL payments via our protected gateways.</p>
+                    <div class="pay-icons">
+                        <i class="fab fa-cc-visa" title="Visa"></i>
+                        <i class="fab fa-cc-mastercard" title="Mastercard"></i>
+                        <i class="fab fa-bitcoin" title="Bitcoin"></i>
+                        <i class="fab fa-paypal" title="PayPal"></i>
+                        <i class="fas fa-shield-alt" title="Secure"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <span class="footer-copy" id="t_footerCopy">© 2026 NINJA HEX. All rights reserved.</span>
+            </div>
+        </footer>
+        <a href="/feedback" class="floating-feedback-btn" aria-label="Feedback">
+            <i class="fas fa-comment-dots"></i>
+            <span>Feedback</span>
+        </a>
+        <style>
+            .floating-feedback-btn {
+                position: fixed;
+                left: 0;
+                top: 50%;
+                transform: translateY(-50%);
+                background: linear-gradient(135deg,#8b5cf6,#3b82f6);
+                color: #fff;
+                padding: 12px 16px;
+                border-radius: 0 8px 8px 0;
+                z-index: 1000;
+                text-decoration: none;
+                font-weight: 600;
+                font-size: 15px;
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                box-shadow: 4px 0 15px rgba(0,0,0,.4);
+                transition: all .3s cubic-bezier(.4, 0, .2, 1)
+            }
+
+            .floating-feedback-btn:hover {
+                padding-left: 20px;
+                background: linear-gradient(135deg,#a78bfa,#60a5fa);
+                color: #fff
+            }
+
+            .floating-feedback-btn i {
+                font-size: 18px
+            }
+
+            @media (max-width: 768px) {
+                .floating-feedback-btn span {
+                    display:none
+                }
+
+                .floating-feedback-btn {
+                    padding: 12px
+                }
+
+                .floating-feedback-btn:hover {
+                    padding-left: 14px
+                }
+            }
+        </style>
+        <script src="scripts/core/effects.js?v=1780596641"></script>
+        <script src="scripts/core/loader.js?v=1780596641"></script>
+    </body>
+</html>
